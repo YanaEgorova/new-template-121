@@ -1,0 +1,38 @@
+.hero__wrapper {
+   position: relative;
+}
+.hero {
+    padding: 35rem 0 10rem;
+    text-align: center;
+
+    background-image: url('../img/bg4.jpeg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px)  {
+    .hero {
+        padding: 45rem 0 15rem;
+        text-align: left;
+    }
+    .hero .title {
+        font-size: 15rem;
+        margin-left: -3rem;
+    }
+    .hero .btn {
+        margin-left: 16rem;
+        position: relative;
+    }
+    .hero .btn::before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 17rem;
+        height: .3rem;
+        background-color: var(--fourth-brand-color);
+        top: 50%;
+        left: -19rem;
+        transform: translate(0, -50%);
+    }
+}
